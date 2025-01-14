@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import DomainPriceTable from './DomainPricing';
 
 const generatePromptId = (length = 12) => {
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -10,13 +9,16 @@ const generatePromptId = (length = 12) => {
   return result;
 };
 
-const SearchDomain = () => {
+interface SearchDomainProps {
+  setPromptId: (id: string) => void;
+}
+
+const SearchDomain: React.FC<SearchDomainProps> = ({ setPromptId }) => {
   const [prompt, setPrompt] = useState('');
-  const [promptId, setPromptId] = useState('');
-  const [domains, setDomains] = useState([]);
 
   const handleSearch = async () => {
     const newPromptId = generatePromptId();
+    setPromptId(newPromptId);
     const requestBody = {
       prompt: prompt,
     };
@@ -36,16 +38,6 @@ const SearchDomain = () => {
 
       const postData = await postResponse.json();
       console.log('POST Response:', postData);
-
-      // Fetch domains after POST request is successful
-      const getResponse = await fetch(`http://localhost:8000/domains/${newPromptId}`);
-      if (!getResponse.ok) {
-        throw new Error('Failed to fetch domains');
-      }
-
-      const getData = await getResponse.json();
-      setDomains(getData.available_domains);
-      setPromptId(newPromptId);
     } catch (error) {
       console.error('Error:', error);
     }
@@ -64,7 +56,6 @@ const SearchDomain = () => {
         ></textarea>
         <button className="search-button" onClick={handleSearch}>Search</button>
       </div>
-      {promptId && <DomainPriceTable promptId={promptId} />}
     </div>
   );
 };
