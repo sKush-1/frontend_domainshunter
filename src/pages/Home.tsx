@@ -1,4 +1,4 @@
-import { HeroSection } from "../components/HeroSection"
+import DomainPriceTable from "../components/DomainPricing"
 import Navbar from "../components/Navbar"
 import SearchDomain from "../components/SearchDomain"
 
@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <>
     <Navbar />
-    {/* <HeroSection/> */}
     <SearchDomain/>
+    <DomainPriceTable/>
 
     </>
 

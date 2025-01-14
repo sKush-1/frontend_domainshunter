@@ -1,0 +1,136 @@
+{
+    "domains": [
+      {
+        "name": "curl.com",
+        "godaddy": { "price": "$9.88" },
+        "hostinger": { "price": "$8.99" },
+        "namecheap": { "price": "$10.99" }
+      },
+      {
+        "name": "meetus.io",
+        "godaddy": { "price": "$11.99" },
+        "hostinger": { "price": "$10.99" },
+        "namecheap": { "price": "$9.99" }
+      },
+      {
+        "name": "curl.com",
+        "godaddy": { "price": "$9.88" },
+        "hostinger": { "price": "$8.99" },
+        "namecheap": { "price": "$10.99" }
+      },
+      {
+        "name": "meetus.io",
+        "godaddy": { "price": "$11.99" },
+        "hostinger": { "price": "$10.99" },
+        "namecheap": { "price": "$9.99" }
+      },
+      {
+        "name": "devhub.net",
+        "godaddy": { "price": "$12.99" },
+        "hostinger": { "price": "$10.29" },
+        "namecheap": { "price": "$11.49" }
+      },
+      {
+        "name": "streamline.org",
+        "godaddy": { "price": "$10.99" },
+        "hostinger": { "price": "$9.49" },
+        "namecheap": { "price": "$11.99" }
+      },
+      {
+        "name": "solardata.tech",
+        "godaddy": { "price": "$13.49" },
+        "hostinger": { "price": "$11.99" },
+        "namecheap": { "price": "$12.99" }
+      },
+      {
+        "name": "novelspace.ai",
+        "godaddy": { "price": "$14.99" },
+        "hostinger": { "price": "$13.49" },
+        "namecheap": { "price": "$13.99" }
+      },
+      {
+        "name": "fintechcrew.biz",
+        "godaddy": { "price": "$9.49" },
+        "hostinger": { "price": "$8.49" },
+        "namecheap": { "price": "$10.49" }
+      },
+      {
+        "name": "cloudify.dev",
+        "godaddy": { "price": "$11.49" },
+        "hostinger": { "price": "$10.49" },
+        "namecheap": { "price": "$12.49" }
+      },
+      {
+        "name": "mediaverse.info",
+        "godaddy": { "price": "$10.49" },
+        "hostinger": { "price": "$9.49" },
+        "namecheap": { "price": "$11.49" }
+      },
+      {
+        "name": "projectx.co",
+        "godaddy": { "price": "$13.49" },
+        "hostinger": { "price": "$12.49" },
+        "namecheap": { "price": "$13.99" }
+      },
+      {
+        "name": "gadgetworld.us",
+        "godaddy": { "price": "$9.99" },
+        "hostinger": { "price": "$8.99" },
+        "namecheap": { "price": "$10.49" }
+      },
+      {
+        "name": "techforge.me",
+        "godaddy": { "price": "$10.99" },
+        "hostinger": { "price": "$9.99" },
+        "namecheap": { "price": "$11.99" }
+      },
+      {
+        "name": "codewave.io",
+        "godaddy": { "price": "$12.99" },
+        "hostinger": { "price": "$11.99" },
+        "namecheap": { "price": "$13.99" }
+      },
+      {
+        "name": "visionary.cc",
+        "godaddy": { "price": "$13.99" },
+        "hostinger": { "price": "$12.49" },
+        "namecheap": { "price": "$14.49" }
+      },
+      {
+        "name": "dataflow.xyz",
+        "godaddy": { "price": "$11.49" },
+        "hostinger": { "price": "$10.49" },
+        "namecheap": { "price": "$11.99" }
+      },
+      {
+        "name": "designluxe.art",
+        "godaddy": { "price": "$14.49" },
+        "hostinger": { "price": "$13.49" },
+        "namecheap": { "price": "$14.99" }
+      },
+      {
+        "name": "ecosystem.live",
+        "godaddy": { "price": "$10.99" },
+        "hostinger": { "price": "$9.99" },
+        "namecheap": { "price": "$11.99" }
+      },
+      {
+        "name": "hubgenius.net",
+        "godaddy": { "price": "$12.49" },
+        "hostinger": { "price": "$11.49" },
+        "namecheap": { "price": "$12.99" }
+      },
+      {
+        "name": "fashionbiz.shop",
+        "godaddy": { "price": "$13.99" },
+        "hostinger": { "price": "$12.99" },
+        "namecheap": { "price": "$14.49" }
+      },
+      {
+        "name": "travelworld.org",
+        "godaddy": { "price": "$11.79" },
+        "hostinger": { "price": "$10.79" },
+        "namecheap": { "price": "$12.29" }
+      }
+    ]
+  }
