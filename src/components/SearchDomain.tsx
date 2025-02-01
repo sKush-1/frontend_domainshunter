@@ -23,7 +23,7 @@ const SearchDomain: React.FC<SearchDomainProps> = ({ setPromptId }) => {
     };
 
     try {
-      const postResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/generate/${newPromptId}`, {
+      const postResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/domains/generate/${newPromptId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
