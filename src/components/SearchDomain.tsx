@@ -18,13 +18,12 @@ const SearchDomain: React.FC<SearchDomainProps> = ({ setPromptId }) => {
 
   const handleSearch = async () => {
     const newPromptId = generatePromptId();
-    setPromptId(newPromptId);
     const requestBody = {
       prompt: prompt,
     };
 
     try {
-      const postResponse = await fetch(`http://localhost:8000/domains/generate/${newPromptId}`, {
+      const postResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/generate/${newPromptId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -38,6 +37,9 @@ const SearchDomain: React.FC<SearchDomainProps> = ({ setPromptId }) => {
 
       const postData = await postResponse.json();
       console.log('POST Response:', postData);
+
+      // Set the promptId only after the POST request is successful
+      setPromptId(newPromptId);
     } catch (error) {
       console.error('Error:', error);
     }

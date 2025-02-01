@@ -19,16 +19,16 @@ const DomainPriceTable: React.FC<DomainPriceTableProps> = ({ promptId }) => {
   useEffect(() => {
     const fetchDomains = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/domains/${promptId}`);
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/${promptId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch');
         }
         const data = await response.json();
         const updatedDomains = data.domains.map((domain: { name: string }) => ({
           name: domain.name,
-          godaddy: { price: "3", link: `${import.meta.env.VITE_GODADDY_BASE_LINK}${domain.name}` },
-          hostinger: { price: "4", link: "http://hostinger.in" },
-          namecheap: { price: "5", link: `${import.meta.env.VITE_NAMECHEAP_BASE_LINK}${domain.name}` },
+          godaddy: { price: "999", link: `${import.meta.env.VITE_GODADDY_BASE_LINK}${domain.name}` },
+          hostinger: { price: "499", link: "https://www.hostinger.in/domain-name-search" },
+          namecheap: { price: "975", link: `${import.meta.env.VITE_NAMECHEAP_BASE_LINK}${domain.name}` },
         }));
         setDomains(updatedDomains);
       } catch (err) {

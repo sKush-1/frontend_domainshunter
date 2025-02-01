@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className='container'>
         <div className='grid navbar-grid'>
             <div className='logo'>
-                <h1>Domain finder</h1>
+                <h1>Domains Hunter</h1>
             </div>
 
             <nav className= {showMenu ? 'menu-mobile' : 'menu-web'}>
