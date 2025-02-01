@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const generatePromptId = (length = 12) => {
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -23,20 +24,17 @@ const SearchDomain: React.FC<SearchDomainProps> = ({ setPromptId }) => {
     };
 
     try {
-      const postResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/domains/generate/${newPromptId}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(requestBody),
-      });
+      const postResponse = await axios.post(
+        `${import.meta.env.VITE_API_BASE_URL}/domains/generate/${newPromptId}`,
+        requestBody,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
 
-      if (!postResponse.ok) {
-        throw new Error('Network response was not ok');
-      }
-
-      const postData = await postResponse.json();
-      console.log('POST Response:', postData);
+      console.log('POST Response:', postResponse.data);
 
       // Set the promptId only after the POST request is successful
       setPromptId(newPromptId);
