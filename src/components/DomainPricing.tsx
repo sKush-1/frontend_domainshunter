@@ -19,7 +19,7 @@ const DomainPriceTable: React.FC<DomainPriceTableProps> = ({ promptId }) => {
   useEffect(() => {
     const fetchDomains = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/${promptId}`);
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/domains/${promptId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch');
         }
