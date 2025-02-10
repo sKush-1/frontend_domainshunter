@@ -24,7 +24,7 @@ const SearchDomain: React.FC<SearchDomainProps> = ({ setPromptId }) => {
     };
 
     try {
-      const postResponse = await axios.post(
+      await axios.post(
         `${import.meta.env.VITE_API_BASE_URL}/domains/generate/${newPromptId}`,
         requestBody,
         {
@@ -34,7 +34,7 @@ const SearchDomain: React.FC<SearchDomainProps> = ({ setPromptId }) => {
         }
       );
 
-
+      // console.log('Post response:', postResponse.data);
       // Set the promptId only after the POST request is successful
       setPromptId(newPromptId);
     } catch (error) {
