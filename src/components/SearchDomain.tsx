@@ -34,7 +34,6 @@ const SearchDomain: React.FC<SearchDomainProps> = ({ setPromptId }) => {
         }
       );
 
-      console.log('POST Response:', postResponse.data);
 
       // Set the promptId only after the POST request is successful
       setPromptId(newPromptId);

@@ -17,7 +17,7 @@ p,li,a,button{
 header{
   height: 10rem;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-  background-color: #d4e6f1;
+  background-color: white;
 }
 
 button {

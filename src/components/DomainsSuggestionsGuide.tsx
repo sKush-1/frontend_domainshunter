@@ -3,15 +3,15 @@ import React from 'react';
 const DomainSuggestionsGuide = () => {
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>Welcome to Domain Suggestions</h1>
+      <h1 style={styles.title}>Welcome to Domains Hunter</h1>
       <p style={styles.subtitle}>
         Your ultimate tool for discovering creative and available domain names.
       </p>
 
       <section style={styles.section}>
-        <h2 style={styles.sectionTitle}>How to Use Domain Suggestions</h2>
+        <h2 style={styles.sectionTitle}>How to Use Domains Hunter</h2>
         <p style={styles.text}>
-          Domain Suggestions helps you find the perfect domain name for your website. Follow these simple steps to get started:
+          Domains Hunter helps you find the perfect domain name for your website. Follow these simple steps to get started:
         </p>
         <ol style={styles.list}>
           <li style={styles.listItem}>
@@ -51,9 +51,9 @@ const DomainSuggestionsGuide = () => {
       </section>
 
       <section style={styles.section}>
-        <h2 style={styles.sectionTitle}>Why Use Domain Suggestions?</h2>
+        <h2 style={styles.sectionTitle}>Why Use Domains Hunter?</h2>
         <p style={styles.text}>
-          Domain Suggestions is designed to make your domain search effortless and effective. Here's why you should use it:
+          Domains Hunter  is designed to make your domain search effortless and effective. Here's why you should use it:
         </p>
         <ul style={styles.list}>
           <li style={styles.listItem}>
@@ -66,7 +66,7 @@ const DomainSuggestionsGuide = () => {
             <strong>Wide Variety:</strong> Explore a wide range of domain options, including different extensions and styles.
           </li>
           <li style={styles.listItem}>
-            <strong>Free to Use:</strong> Domain Suggestions is completely free, with no hidden fees.
+            <strong>Free to Use:</strong> Domains Hunter is completely free, with no hidden fees.
           </li>
         </ul>
       </section>

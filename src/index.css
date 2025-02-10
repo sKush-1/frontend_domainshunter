@@ -1,5 +1,7 @@
 /* // Banners */
-
+.logo img {
+  border-radius: 5px;
+}
 .search-domain img {
   width: 100%;
   height: 60vh;

@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className='container'>
         <div className='grid navbar-grid'>
             <div className='logo'>
-                <h1>Domains Hunter</h1>
+                <img  src='logo.png' alt='logo' height={"105vh"} width={"40%"}/>
             </div>
 
             <nav className= {showMenu ? 'menu-mobile' : 'menu-web'}>

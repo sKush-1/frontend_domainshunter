@@ -65,7 +65,8 @@ const Footer = () => {
     borderRadius: '8px',
     border: 'none',
     cursor: 'pointer',
-    width: 'fit-content'
+    width: 'fit-content',
+    marginLeft: '10px'
   };
 
   const copyrightStyles: CSSProperties = {
